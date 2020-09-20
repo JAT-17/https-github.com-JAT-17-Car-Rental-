@@ -185,11 +185,12 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Images\2019-toyota-corolla.jpg" />
+    <Content Include="Images\Banner.png" />
     <Content Include="Products.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Honda1.jpg" />
     <Content Include="Images\logo2.png" />
-    <Content Include="Images\Banner.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

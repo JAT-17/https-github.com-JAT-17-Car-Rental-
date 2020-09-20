@@ -2,11 +2,28 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>GetAway Car-Rental</h1>
-        <h2>Drive out with a secure and comfortable ride</h2>
-        <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
-    </div>
+   
+    
+      
+       <div class="container basic-info">
+            
+           <div class="row">
+                    <div class="col-md-12 mainpic"> 
+
+                    <img  src="Images/Honda1.jpg " class="img-responsive img-rounded" />
+            
+         <div class="carousel-caption">             
+           <div class="row ">
+                <h1>GetAway Car-Rental</h1>
+                <h2 class=>Drive out with a secure and comfortable ride</h2>
+                <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
+           </div>
+        </div>
+                    </div> 
+           </div>
+       </div>
+
+
 
     <div class="row">
         <div class="col-md-4">
