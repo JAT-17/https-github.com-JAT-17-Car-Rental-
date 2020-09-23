@@ -14,7 +14,7 @@
             
          <div class="carousel-caption">             
            <div class="row ">
-                <h1>GetAway Car-Rental</h1>
+                <h1 class="apple">GetAway Car-Rental</h1>
                 <h2 class=>Drive out with a secure and comfortable ride</h2>
                 <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
            </div>
