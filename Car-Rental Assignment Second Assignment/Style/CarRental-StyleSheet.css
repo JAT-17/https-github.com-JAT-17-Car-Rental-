@@ -3,9 +3,7 @@
 
 
 /* General*/
-.apple{
-    color:forestgreen;
-}
+
 
 
 
@@ -32,7 +30,7 @@
 .BannerBox {
     width: 1020px;
     height: 103px;
-    background-image: url(../Images/Banner.png);
+    background-image: url(../Images/Bannerbackdrop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

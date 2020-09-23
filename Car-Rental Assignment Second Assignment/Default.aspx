@@ -5,16 +5,16 @@
    
     
       
-       <div class="container basic-info">
+       <div class="container">
             
            <div class="row">
-                    <div class="col-md-12 mainpic"> 
+                    <div class="col-md-12 "> 
 
                     <img  src="Images/Honda1.jpg " class="img-responsive img-rounded" />
             
          <div class="carousel-caption">             
            <div class="row ">
-                <h1 class="apple">GetAway Car-Rental</h1>
+                <h1>GetAway Car-Rental</h1>
                 <h2 class=>Drive out with a secure and comfortable ride</h2>
                 <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
            </div>
