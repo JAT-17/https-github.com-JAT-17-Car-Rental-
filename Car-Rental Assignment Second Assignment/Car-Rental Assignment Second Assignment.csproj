@@ -185,8 +185,10 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Images\2019 Nissan.jpg" />
     <Content Include="Images\2019-toyota-corolla.jpg" />
     <Content Include="Images\Bannerbackdrop.png" />
+    <Content Include="Images\Swift 2017.jpg" />
     <Content Include="Products.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Honda1.jpg" />
