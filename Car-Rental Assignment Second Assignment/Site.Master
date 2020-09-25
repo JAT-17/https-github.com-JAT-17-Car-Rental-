@@ -55,7 +55,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li><a runat="server" href="~/Products">Products</a></li>
                     </ul>
@@ -79,14 +79,19 @@
             </div>
         </div>
 
-        <div class="row">
-            <div> 
-                <asp:Image  ID="Image1" runat="server" ImageUrl="../Images/Bannerbackdrop.png" class="img-responsive" />
-            </div>
-        </div>
-
-            <asp:Image ID="Imageicon" runat="server" ImageUrl="../Images/logo2.png" class="img-responsive"/>
+                                                
         
+        <div class="container"> 
+        <div class="row">  
+            <div class="col-md-12">                                                        
+                <div>  
+                        <asp:Image  ID="Banner" runat="server" ImageUrl="../Images/Bannerbackdrop.png" class="img-responsive" />
+                        <asp:Image ID="Icon" runat="server" ImageUrl="../Images/logo.png" class="img-responsive" />
+                                         
+                            </div>
+                    </div>
+            </div>
+      </div>  
         
         <br />
         <div class="container body-content">

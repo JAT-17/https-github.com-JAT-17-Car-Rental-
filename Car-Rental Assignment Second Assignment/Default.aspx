@@ -5,18 +5,26 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-   
-    
-      <div class="jumbotron">
-            
-                <div class="row"> 
-                    <asp:Image  ID="Image2" runat="server" ImageUrl="../Images/Honda1.jpg" class="img-responsive" />
+
+<div class="container">
+        <div class="row">  
+            <div class="col-md-12">  
+                <div class="jumbotron">
+                         
+                    
+                    <asp:Image id="Main_image"  runat="server" ImageUrl="../Images/Honda.png" class="img-responsive" />
+                   
+                            
                             <h1 class="lead-title">GetAway Car-Rental</h1>
-                            <h2 class="lead">Drive out with a secure and comfortable ride</h2>
-                            <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
-                            <a class="btn btn-default btn-lg" href="Products.aspx"> Check out your products &raquo;</a>                
-                </div> 
-      </div>   
+                                    <h2 class="lead">Drive out with a secure and comfortable ride</h2>
+                                    <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
+                                    <a class="btn btn-default btn-lg main_button_to_products" href="Products.aspx"> Check out your products &raquo;</a>                             
+                            
+                    </div>
+            </div>       
+        </div> 
+</div>
+
 
     <%--  --%>
    

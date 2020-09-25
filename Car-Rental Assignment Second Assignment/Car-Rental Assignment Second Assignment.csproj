@@ -188,11 +188,12 @@
     <Content Include="Images\2019 Nissan.jpg" />
     <Content Include="Images\2019-toyota-corolla.jpg" />
     <Content Include="Images\Bannerbackdrop.png" />
+    <Content Include="Images\Honda.png" />
+    <Content Include="Images\man-holding-keys-png.png" />
     <Content Include="Images\Swift 2017.jpg" />
     <Content Include="Products.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Images\Honda1.jpg" />
-    <Content Include="Images\logo2.png" />
+    <Content Include="Images\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

@@ -11,19 +11,31 @@
 /*Default page*/
 
 
-.jumbotron {
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-   background-position:left bottom;
+
+.main_button_to_products {
+    background-color: greenyellow;
+    height: 75px;
+    padding-top: 25px;
 }
+
+    .main_button_to_products:hover {
+        background: linear-gradient(to right,greenyellow, #005580);
+        color: white;
+    }
+
+    .jumbotron {
+        padding:10px;
+       
+    }
+
+
+
+
 
 .lead-title {
     color: black;
-    font-family:Arial;
-    font-size:64px;
-   
+    font-family: Arial;
+    font-size: 64px;
 }
 
 .lead{
@@ -33,6 +45,22 @@ margin-left:0px;
 
 }
 
+
+/*About us Page*/
+
+.About_us-title {
+    font-size:78px;
+}
+
+.About_us_info{
+
+font-size: 20px;
+
+
+
+}
+
+
 /*Master Page*/
 .navbar-brand {
     background-color: greenyellow;
@@ -40,21 +68,21 @@ margin-left:0px;
     border-bottom-right-radius: 80%;
 }
 
-
-
-#Image1 {
+#Banner {
     
     background-position:center;
-    margin-left: 200px;
-    width:1000px;
+    width:100%;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
 }
-#Imageicon {
 
-    height:75px;
-    margin-left:250px;
-    margin-top:-100px;
+#Icon {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    z-index: 2;
 }
 
 

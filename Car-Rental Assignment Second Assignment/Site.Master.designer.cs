@@ -15,22 +15,22 @@ namespace Car_Rental_Assignment_Second_Assignment
     {
 
         /// <summary>
-        /// Image1 control.
+        /// Banner control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image Banner;
 
         /// <summary>
-        /// Imageicon control.
+        /// Icon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Imageicon;
+        protected global::System.Web.UI.WebControls.Image Icon;
 
         /// <summary>
         /// MainContent control.
