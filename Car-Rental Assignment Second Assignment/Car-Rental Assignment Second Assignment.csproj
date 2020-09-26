@@ -187,8 +187,9 @@
     <Content Include="Account\Web.config" />
     <Content Include="Images\2019 Nissan.jpg" />
     <Content Include="Images\2019-toyota-corolla.jpg" />
-    <Content Include="Images\Bannerbackdrop.png" />
     <Content Include="Images\Honda.png" />
+    <Content Include="Images\Bannerbackdrop.png" />
+    <Content Include="Images\Drive Away.png" />
     <Content Include="Images\man-holding-keys-png.png" />
     <Content Include="Images\Swift 2017.jpg" />
     <Content Include="Products.aspx" />

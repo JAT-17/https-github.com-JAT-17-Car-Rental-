@@ -6,95 +6,106 @@
 
 
 
-
-
 /*Default page*/
-
-
 
 .main_button_to_products {
     background-color: greenyellow;
-    height: 75px;
     padding-top: 25px;
+    height: 75px;
 }
-
-    .main_button_to_products:hover {
-        background: linear-gradient(to right,greenyellow, #005580);
-        color: white;
-    }
-
-    .jumbotron {
-        padding:10px;
-       
+    .main_button_to_products:hover {     
+        background: linear-gradient(to right,greenyellow, #005580 );
+        color: black;
+        transition: 680ms;
     }
 
 
-
-
-
-.lead-title {
-    color: black;
-    font-family: Arial;
-    font-size: 64px;
-}
-
-.lead{
-
-color:black;
-margin-left:0px;
+.jumbotron {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 1rem !important;
 
 }
 
 
-/*About us Page*/
-
-.About_us-title {
-    font-size:78px;
-}
-
-.About_us_info{
-
-font-size: 20px;
+    .lead-title {
+        color: black;
+        font-family: Arial;
+        font-size: 64px;
+    }
 
 
+    .lead{
 
-}
+    color:black;
+    margin-left:0px;
+
+    }
 
 
-/*Master Page*/
+/* About us Page */
+
+
+
+
+
+
+
+/* Contact us Page */
+
+
+
+/* Master Page */
 .navbar-brand {
     background-color: greenyellow;
-    border-bottom-left-radius: 80%;
-    border-bottom-right-radius: 80%;
-}
-
-#Banner {
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
     
-    background-position:center;
-    width:100%;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
 }
 
-#Icon {
-    width: 20%;
-    height: auto;
-    position: absolute;
-    top: 4px;
-    left: 25px;
-    z-index: 2;
-}
+    .navbar-brand:hover {
+        background: linear-gradient(to left,greenyellow, greenyellow);
+        color: black !IMPORTANT;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        transition:190ms;
+        
+    }
 
 
 
 
-/*Product Page*/
 
-.img-responsive car1 {
+    #Banner {
+    
+        background-position:center;
+        width:100%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+
+    #Icon {
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 4px;
+        left: 25px;
+        z-index: 2;
+    }
+
+
+/* Product Page */
+
+    .img-responsive car1 {
  
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+        float: left;
+        width: 33.33%;
+        padding: 5px;
 
-}
+    }
 

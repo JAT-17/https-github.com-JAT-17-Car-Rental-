@@ -18,7 +18,7 @@
                             <h1 class="lead-title">GetAway Car-Rental</h1>
                                     <h2 class="lead">Drive out with a secure and comfortable ride</h2>
                                     <p class="lead">We ensure excellent customer service and 24/7 feedback to our valued customer</p>
-                                    <a class="btn btn-default btn-lg main_button_to_products" href="Products.aspx"> Check out your products &raquo;</a>                             
+                                    <a class="btn btn-default btn-lg main_button_to_products" href="Products.aspx"> <strong>Check out your products &raquo;</strong></a>                             
                             
                     </div>
             </div>       
