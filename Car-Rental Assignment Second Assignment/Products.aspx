@@ -23,7 +23,17 @@
         Unit Price: $7500 per day<br />
          </h2>
     </div>
-       
+    <asp:Button id="btnAddToCart" Text="ADD TO CART" runat="server"  OnClick="btnAddToCart_Click" />   
+    <asp:DropDownList ID="ddlToyota" runat="server">
+        <asp:ListItem>Select number of days</asp:ListItem>
+        <asp:ListItem value="1"> 1 Day</asp:ListItem>
+        <asp:ListItem value="2"> 2 Days</asp:ListItem>
+        <asp:ListItem value="3"> 3 Days</asp:ListItem>
+        <asp:ListItem value="4"> 4 Days</asp:ListItem>
+        <asp:ListItem value="5"> 5 Day</asp:ListItem>
+    </asp:DropDownList>
+
+
 <div class="row">
              <div class="col-sm-5 center">   
              <img class="img-responsive car" src="Images/2019 Nissan.jpg" />

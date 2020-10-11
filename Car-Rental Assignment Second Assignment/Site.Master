@@ -58,6 +58,7 @@
                         <li><a runat="server" href="~/About">About Us</a></li>
                         <li><a runat="server" href="~/Contact">Contact Us</a></li>
                         <li><a runat="server" href="~/Products">Products</a></li>
+                        <li><a runat="server" href="~/RentalCart">Rental Cart</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
