@@ -51,6 +51,24 @@ namespace Car_Rental_Assignment_Second_Assignment
         protected global::System.Web.UI.WebControls.Literal lbiPrice;
 
         /// <summary>
+        /// lbiFromDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbiFromDate;
+
+        /// <summary>
+        /// lbiToDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lbiToDate;
+
+        /// <summary>
         /// lbiRentalTotal control.
         /// </summary>
         /// <remarks>

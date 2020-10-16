@@ -22,7 +22,7 @@
         Type: Sedan <br />
         Unit Price: $7500 per day<br />
          </h2>
-    </div>
+    
     <asp:Button id="btnAddToCart" Text="ADD TO CART" runat="server"  OnClick="btnAddToCart_Click" />   
     <asp:DropDownList ID="ddlToyota" runat="server">
         <asp:ListItem>Select number of days</asp:ListItem>
@@ -32,7 +32,11 @@
         <asp:ListItem value="4"> 4 Days</asp:ListItem>
         <asp:ListItem value="5"> 5 Day</asp:ListItem>
     </asp:DropDownList>
-
+   From  <asp:TextBox ID="fromdatepicker1" runat="server" TextMode="Date"> </asp:TextBox>       
+    to  
+        <asp:TextBox ID="todatepicker1" runat="server" TextMode="Date"> </asp:TextBox>
+        
+  </div>   
 
 <div class="row">
              <div class="col-sm-5 center">   
@@ -46,6 +50,19 @@
         Type: Sudan <br />
         Unit Price: $9500 per day<br />
          </h2>
+
+        <asp:Button id="Button1" Text="ADD TO CART" runat="server"  OnClick="btnAddToCart_Click1" />   
+    <asp:DropDownList ID="ddlNissan" runat="server">
+        <asp:ListItem>Select number of days</asp:ListItem>
+        <asp:ListItem value="1"> 1 Day</asp:ListItem>
+        <asp:ListItem value="2"> 2 Days</asp:ListItem>
+        <asp:ListItem value="3"> 3 Days</asp:ListItem>
+        <asp:ListItem value="4"> 4 Days</asp:ListItem>
+        <asp:ListItem value="5"> 5 Day</asp:ListItem>
+    </asp:DropDownList>
+   From  <asp:TextBox ID="fromdatepicker2" runat="server" TextMode="Date"> </asp:TextBox>       
+    to  
+        <asp:TextBox ID="todatepicker2" runat="server" TextMode="Date"> </asp:TextBox>
     </div>
 
     <div class="row">

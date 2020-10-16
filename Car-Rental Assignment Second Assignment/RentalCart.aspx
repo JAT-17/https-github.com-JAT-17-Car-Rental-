@@ -3,17 +3,19 @@
 
 
 
-    <div class="container">
+    <div class="container" id="RentalCartContainer">
         <div class="row">  
-            <div class="col-md-8">  
-                <div class="jumbotron ShoppingCartShell"> 
+            <div class="col-md-6">  
+                <div class="jumbotron" id="ShoppingCartShell"> 
                     
                             <h1 class="lead-title-RentalCartPage">Rental Cart</h1>   
 <asp:Table ID="RentalCartTable" runat="server">                    
       <asp:TableRow>
-                    <asp:TableHeaderCell> Item   &nbsp;&nbsp; |   </asp:TableHeaderCell>
-                    <asp:TableHeaderCell> &nbsp;&nbsp;Number of days &nbsp;&nbsp;  |   </asp:TableHeaderCell>
-                    <asp:TableHeaderCell> Price Per day ($)      </asp:TableHeaderCell>
+                    <asp:TableHeaderCell>Item&nbsp;&nbsp;|   </asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of days|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Per day ($)|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To</asp:TableHeaderCell>
      </asp:TableRow>
 
      <asp:TableRow>
@@ -28,6 +30,15 @@
                     <asp:TableCell>
                         <asp:Literal ID="lbiPrice" runat="server"></asp:Literal>
                     </asp:TableCell>
+
+                    <asp:TableCell>
+                        <asp:Literal ID="lbiFromDate" runat="server"> </asp:Literal>
+                    </asp:TableCell>
+         
+                    <asp:TableCell>
+                        <asp:Literal ID="lbiToDate" runat="server"></asp:Literal>
+                    </asp:TableCell>
+
      </asp:TableRow>               
 </asp:Table>
             

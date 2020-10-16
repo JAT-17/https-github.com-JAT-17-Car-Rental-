@@ -109,10 +109,25 @@
 
     }
 
+    #picker 
+    {
+        width:25%;
+
+    }
+
     /* Rental Cart*/
 
 .lead-title-RentalCartPage{
     margin-left: 25%;
 
 }
+#ShoppingCartShell {
+    
+    background-color: yellow;
+}
 
+#RentalCartContainer
+{
+    
+
+}

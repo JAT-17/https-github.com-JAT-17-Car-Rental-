@@ -30,17 +30,23 @@ namespace Car_Rental_Assignment_Second_Assignment
             string Name1 = "";
             string NumOfDays1 = "";
             string Price1 = "";
+            string FromDate1 = "";
+            string ToDate1 = "";
 
             foreach (var item in Selected  )
             {
                 Name1 += item.CarName;
                 NumOfDays1 += item.NumOfDays;
                 Price1 += item.Price;
+                FromDate1 += item.FromDate;
+                ToDate1 += item.ToDate;
             }
 
             lbiCarName.Text = Name1;
             lbiNumOfDays.Text = NumOfDays1;
             lbiPrice.Text = Price1;
+            lbiFromDate.Text = FromDate1;
+            lbiToDate.Text = ToDate1;
             lbiRentalTotal.Text = CalculateRentalListTotal(Convert.ToInt32(NumOfDays1), Convert.ToInt32(Price1)).ToString("C",CultureInfo.CurrentCulture);
         }
             protected decimal CalculateRentalListTotal(int numofdays, decimal price)
