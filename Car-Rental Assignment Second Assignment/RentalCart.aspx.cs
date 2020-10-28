@@ -12,42 +12,99 @@ namespace Car_Rental_Assignment_Second_Assignment
     public partial class RentalCart : System.Web.UI.Page
     { 
         protected List<CartItem> Selected = new List<CartItem>();
+       // protected List<CartItem> additem = new List<CartItem>();
 
-        
 
         protected void Page_Load(object sender, EventArgs e)
         {
-             DisplayRentalCart();
+            
+
+
+            DisplayRentalCart();
         }
+
+
+
+
 
 
         public void DisplayRentalCart()
         {
-            
-           
-            Selected  = (List<CartItem>)Session["Rental"];
 
-            string Name1 = "";
-            string NumOfDays1 = "";
-            string Price1 = "";
-            string FromDate1 = "";
-            string ToDate1 = "";
-
-            foreach (var item in Selected  )
+            if (Session["Rental"] != null)
             {
-                Name1 += item.CarName;
-                NumOfDays1 += item.NumOfDays;
-                Price1 += item.Price;
-                FromDate1 += item.FromDate;
-                ToDate1 += item.ToDate;
+               // List<CartItem> Selected = Session["Rental"] as List<CartItem>;
+               // Selected.Add((CartItem)Session["Rental"]);
+                //Session["Rental"] = Selected;
+
+                // Selected = Convert.ToString(Selected);
+
             }
 
-            lbiCarName.Text = Name1;
-            lbiNumOfDays.Text = NumOfDays1;
-            lbiPrice.Text = Price1;
-            lbiFromDate.Text = FromDate1;
-            lbiToDate.Text = ToDate1;
-            lbiRentalTotal.Text = CalculateRentalListTotal(Convert.ToInt32(NumOfDays1), Convert.ToInt32(Price1)).ToString("C",CultureInfo.CurrentCulture);
+
+            //  additem = (List<CartItem>)Session["Rental"];
+            Selected = (List<CartItem>)Session["Rental"];
+
+                decimal Total = 0;
+            int NumDays;
+            decimal Price;
+
+               
+            
+            
+            foreach (var item in Selected)
+                {
+                NumDays = item.NumOfDays;
+                Price = item.Price;
+
+                Total += NumDays * Price;
+                
+                // Name1 += item.CarName;
+                    //NumOfDays1 += item.NumOfDays;
+                    //Price1 += item.Price;
+                    //FromDate1 += item.FromDate;
+                    //ToDate1 += item.ToDate;
+                TableRow Row = new TableRow();
+                TableCell nameCellCarname = new TableCell();
+                TableCell nameCellNumofDays = new TableCell();
+                TableCell nameCellPrice = new TableCell();
+                TableCell nameCellFromDate = new TableCell();
+                TableCell nameCellToDate = new TableCell();
+
+                nameCellCarname.Text = item.CarName;
+                nameCellNumofDays.Text = Convert.ToString (item.NumOfDays);
+                nameCellPrice.Text = Convert.ToString (item.Price);
+                nameCellFromDate.Text = item.FromDate;
+                nameCellToDate.Text = item.ToDate;
+
+                Row.Cells.Add(nameCellCarname);
+                Row.Cells.Add(nameCellNumofDays);
+                Row.Cells.Add(nameCellPrice);
+                Row.Cells.Add(nameCellFromDate);
+                Row.Cells.Add(nameCellToDate);
+
+               // Name1 += Row.Cells.Add(new TableCell());
+               // NumOfDays1 += Row.Cells.Add(new TableCell());
+               // Price1 += Row.Cells.Add(new TableCell());
+               //FromDate1 += Row.Cells.Add(new TableCell());
+               //ToDate1 += Row.Cells.Add(new TableCell());
+
+                // RowCell.Controls.Add(Name1 += item.CarName);
+
+                // Name1 = Row.Cells.Add(TableCell RowCell(item.CarName));
+
+
+
+                this.RentalCartTable.Rows.Add(Row);
+
+                //Row.Cells.Add(new TableCell() )
+                // this.RentalCartTable.Rows.Add(new TableRow()) 
+            }
+
+         
+            lbiRentalTotal.Text = Convert.ToString(Total);
+
+         
         }
             protected decimal CalculateRentalListTotal(int numofdays, decimal price)
             {

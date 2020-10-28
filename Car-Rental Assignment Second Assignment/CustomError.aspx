@@ -12,17 +12,5 @@
         <asp:HyperLink   id="inkhome" runat="server"  NavigateURL="~/Default.aspx" >Return to home page</asp:HyperLink>
 
     </p>
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
-    &nbsp
+  
 </asp:Content>

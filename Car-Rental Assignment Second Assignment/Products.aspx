@@ -10,13 +10,17 @@
         <h1> Chech out what we have in store for you!!!! </h1>
 </div>
          
-           <div class="row">
-             <div class="col-sm-5 center">   
-             <img class="img-responsive car" src="Images/2019-toyota-corolla.jpg" />
-             </div>
-         </div>
+    
 
-    <div class="row">  
+
+           <div class="row">
+              
+                 
+            <div class="col-sm-5 ">
+                 <img class="img-responsive car" src="Images/2019-toyota-corolla.jpg" />
+             
+
+     
     <h2> ID: 56RT7  <br />
         Name: 2019-Toyota-Corolla <br />
         Type: Sedan <br />
@@ -36,15 +40,18 @@
     to  
         <asp:TextBox ID="todatepicker1" runat="server" TextMode="Date"> </asp:TextBox>
         
-  </div>   
+ </div>   
 
-<div class="row">
-             <div class="col-sm-5 center">   
+  
+
+
+
+             <div class="col-sm-5 ">   
              <img class="img-responsive car" src="Images/2019 Nissan.jpg" />
-             </div>
-         </div>
+             
+         
 
-    <div class="row">  
+      
     <h2> ID: 72KG4  <br />
         Name: 2019-Nissan <br />
         Type: Sudan <br />
@@ -63,7 +70,11 @@
    From  <asp:TextBox ID="fromdatepicker2" runat="server" TextMode="Date"> </asp:TextBox>       
     to  
         <asp:TextBox ID="todatepicker2" runat="server" TextMode="Date"> </asp:TextBox>
-    </div>
+    
+</div>
+   
+ </div>    
+
 
     <div class="row">
              <div class="col-sm-5 center">   

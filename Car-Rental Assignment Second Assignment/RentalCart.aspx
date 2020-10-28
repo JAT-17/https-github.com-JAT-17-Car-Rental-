@@ -11,32 +11,32 @@
                             <h1 class="lead-title-RentalCartPage">Rental Cart</h1>   
 <asp:Table ID="RentalCartTable" runat="server">                    
       <asp:TableRow>
-                    <asp:TableHeaderCell>Item&nbsp;&nbsp;|   </asp:TableHeaderCell>
-                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of days|</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price Per day ($)|</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From|</asp:TableHeaderCell>
-                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>Car &nbsp;&nbsp;&nbsp;&nbsp;|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp; Days &nbsp;|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell> &nbsp; Cost Per day &nbsp;|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp; From &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;|</asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp; To &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </asp:TableHeaderCell>
      </asp:TableRow>
 
      <asp:TableRow>
                     <asp:TableCell>
-                        <asp:Literal ID="lbiCarName" runat="server"></asp:Literal>
+                        <asp:Literal ID="lbiCarName" runat="server"></asp:Literal>&nbsp
                     </asp:TableCell>
                     
                     <asp:TableCell>
-                        <asp:Literal ID="lbiNumOfDays" runat="server"></asp:Literal>
+                       &nbsp;&nbsp;&nbsp; <asp:Literal  ID="lbiNumOfDays" runat="server"></asp:Literal>&nbsp
                     </asp:TableCell>
 
                     <asp:TableCell>
-                        <asp:Literal ID="lbiPrice" runat="server"></asp:Literal>
+                       &nbsp;&nbsp;&nbsp;&nbsp; <asp:Literal ID="lbiPrice" runat="server"></asp:Literal>&nbsp
                     </asp:TableCell>
 
                     <asp:TableCell>
-                        <asp:Literal ID="lbiFromDate" runat="server"> </asp:Literal>
+                        <asp:Literal ID="lbiFromDate" runat="server"> </asp:Literal>&nbsp
                     </asp:TableCell>
          
                     <asp:TableCell>
-                        <asp:Literal ID="lbiToDate" runat="server"></asp:Literal>
+                      &nbsp;  <asp:Literal ID="lbiToDate" runat="server"></asp:Literal>&nbsp
                     </asp:TableCell>
 
      </asp:TableRow>               
