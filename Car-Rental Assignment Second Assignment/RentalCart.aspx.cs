@@ -1,4 +1,5 @@
 ﻿using Car_Rental_Assignment_Second_Assignment.Models;
+using Microsoft.Ajax.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -6,6 +7,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Car_Rental_Assignment_Second_Assignment
 {
@@ -24,28 +28,13 @@ namespace Car_Rental_Assignment_Second_Assignment
         }
 
 
-
-
-
-
         public void DisplayRentalCart()
         {
 
-            if (Session["Rental"] != null)
-            {
-               // List<CartItem> Selected = Session["Rental"] as List<CartItem>;
-               // Selected.Add((CartItem)Session["Rental"]);
-                //Session["Rental"] = Selected;
 
-                // Selected = Convert.ToString(Selected);
-
-            }
-
-
-            //  additem = (List<CartItem>)Session["Rental"];
             Selected = (List<CartItem>)Session["Rental"];
 
-                decimal Total = 0;
+            decimal Total = 0;
             int NumDays;
             decimal Price;
 
@@ -59,46 +48,50 @@ namespace Car_Rental_Assignment_Second_Assignment
 
                 Total += NumDays * Price;
                 
-                // Name1 += item.CarName;
-                    //NumOfDays1 += item.NumOfDays;
-                    //Price1 += item.Price;
-                    //FromDate1 += item.FromDate;
-                    //ToDate1 += item.ToDate;
+                //Table row declaered
                 TableRow Row = new TableRow();
+                //Table row declaered
+
                 TableCell nameCellCarname = new TableCell();
                 TableCell nameCellNumofDays = new TableCell();
                 TableCell nameCellPrice = new TableCell();
                 TableCell nameCellFromDate = new TableCell();
                 TableCell nameCellToDate = new TableCell();
+               TableCell nameCellRemoveItem = new TableCell();
+                CheckBoxField nameCellRemoveItem1 = new CheckBoxField();
+
+                //CheckBox nameCellRemoveItem = new CheckBox();
 
                 nameCellCarname.Text = item.CarName;
                 nameCellNumofDays.Text = Convert.ToString (item.NumOfDays);
                 nameCellPrice.Text = Convert.ToString (item.Price);
                 nameCellFromDate.Text = item.FromDate;
                 nameCellToDate.Text = item.ToDate;
+               // nameCellRemoveItem.Enabled = item.Remove; 
+                //nameCellRemoveItem.Controls = nameCellRemoveItem1;
+                // nameCellRemoveItem = Page.FindControl(nameCellRemoveItem1)
+
+
+
+
+                // nameCellRemoveItem.Checked = item.Remove;
+
+
 
                 Row.Cells.Add(nameCellCarname);
                 Row.Cells.Add(nameCellNumofDays);
                 Row.Cells.Add(nameCellPrice);
                 Row.Cells.Add(nameCellFromDate);
                 Row.Cells.Add(nameCellToDate);
+                Row.Cells.Add(nameCellRemoveItem);
+               // Row.Cells.Add(nameCellRemoveItem);
+                // Row.Cells.Add(Controls.Add(nameCellRemoveItem1));
 
-               // Name1 += Row.Cells.Add(new TableCell());
-               // NumOfDays1 += Row.Cells.Add(new TableCell());
-               // Price1 += Row.Cells.Add(new TableCell());
-               //FromDate1 += Row.Cells.Add(new TableCell());
-               //ToDate1 += Row.Cells.Add(new TableCell());
-
-                // RowCell.Controls.Add(Name1 += item.CarName);
-
-                // Name1 = Row.Cells.Add(TableCell RowCell(item.CarName));
-
+                // Row.Cells.Add(nameCellRemoveItem);
 
 
                 this.RentalCartTable.Rows.Add(Row);
 
-                //Row.Cells.Add(new TableCell() )
-                // this.RentalCartTable.Rows.Add(new TableRow()) 
             }
 
          
@@ -114,7 +107,27 @@ namespace Car_Rental_Assignment_Second_Assignment
 
             }
 
+        protected void SaveCartItem_Click(object sender, EventArgs e)
+        {
+            string dbconnection = ConfigurationManager.ConnectionStrings["GetWayCarRentalDBConnection"].ConnectionString;
+            SqlConnection sqlconn = new SqlConnection(dbconnection);
+            sqlconn.Open();
 
-        
+            Selected = (List<CartItem>)Session["Rental"];
+
+            foreach (var item in Selected) 
+            {
+
+                string sqlquery = "insert into [dbo].[CartItem] (days, carName,fromdate, toDate)  values (@NumOfDays, @CarName, @FromDate,@ToDate) ";
+                SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn);
+                sqlcomm.Parameters.AddWithValue("@NumOfDays",item.NumOfDays );
+                sqlcomm.Parameters.AddWithValue("@CarName", item.CarName);
+                sqlcomm.Parameters.AddWithValue("@FromDate", item.FromDate);
+                sqlcomm.Parameters.AddWithValue("@ToDate", item.ToDate);
+
+                sqlcomm.ExecuteNonQuery();
+            }
+            sqlconn.Close();
+        }
     }
 }

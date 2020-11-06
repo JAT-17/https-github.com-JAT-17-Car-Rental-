@@ -16,6 +16,7 @@
                     <asp:TableHeaderCell> &nbsp; Cost Per day &nbsp;|</asp:TableHeaderCell>
                     <asp:TableHeaderCell>&nbsp; From &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;|</asp:TableHeaderCell>
                     <asp:TableHeaderCell>&nbsp;&nbsp;&nbsp; To &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </asp:TableHeaderCell>
+                    <asp:TableHeaderCell>&nbsp; remove &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;|</asp:TableHeaderCell>
      </asp:TableRow>
 
      <asp:TableRow>
@@ -39,11 +40,18 @@
                       &nbsp;  <asp:Literal ID="lbiToDate" runat="server"></asp:Literal>&nbsp
                     </asp:TableCell>
 
+                    <asp:TableCell>
+                      &nbsp;  <asp:Literal ID="Remove" runat="server"></asp:Literal>&nbsp
+                    </asp:TableCell>
+
      </asp:TableRow>               
 </asp:Table>
             
                     <h3> Rental Total: </h3>
                     <asp:Label id="lbiRentalTotal" runat="server" Text="" ></asp:Label>
+                   
+                    <asp:Button ID="SaveCartItem" runat="server" Text="Save" OnClick="SaveCartItem_Click" />
+
 
 
                </div>

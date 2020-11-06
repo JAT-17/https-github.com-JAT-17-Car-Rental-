@@ -31,7 +31,8 @@ namespace Car_Rental_Assignment_Second_Assignment
         protected void btnAddToCart_Click(object sender, EventArgs e)
         {
             
-            CartItem ItemSelected = new CartItem("Toyota", Convert.ToInt32(ddlToyota.SelectedValue), 7500M, Convert.ToString(fromdatepicker1.Text) , Convert.ToString(todatepicker1.Text));
+
+                   CartItem ItemSelected = new CartItem("Toyota", Convert.ToInt32(ddlToyota.SelectedValue), 7500M, Convert.ToString(fromdatepicker1.Text) , Convert.ToString(todatepicker1.Text));
 
                                             //Adding this rental car to the list 
             Rentals.Add(ItemSelected);
