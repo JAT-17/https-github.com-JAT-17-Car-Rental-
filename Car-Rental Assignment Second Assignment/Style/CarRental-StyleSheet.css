@@ -1,0 +1,132 @@
+﻿body {
+   
+}
+
+/* General*/
+
+
+
+/*Default page*/
+
+.main_button_to_products {
+    background-color: greenyellow;
+    padding-top: 25px;
+    height: 75px;
+}
+    .main_button_to_products:hover {     
+        background: linear-gradient(to right,greenyellow, #005580 );
+        color: black;
+        transition: 680ms;
+    }
+
+
+.jumbotron {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0rem !important;
+    padding-bottom: 1rem !important;
+
+}
+
+
+    .lead-title {
+        color: black;
+        font-family: Arial;
+        font-size: 64px;
+    }
+
+
+    .lead{
+
+    color:black;
+    margin-left:0px;
+
+    }
+
+
+/* About us Page */
+
+
+
+
+
+
+
+/* Contact us Page */
+
+
+
+/* Master Page */
+.navbar-brand {
+    background-color: greenyellow;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius: 90%;
+    border-top-left-radius: 90%;
+    border-top-right-radius: 90%;
+    
+}
+
+    .navbar-brand:hover {
+        background: linear-gradient(to left,greenyellow, greenyellow);
+        color: black !IMPORTANT;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        transition:190ms;
+        
+    }
+
+
+
+
+
+    #Banner {
+    
+        background-position:center;
+        width:100%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+    }
+
+    #Icon {
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 4px;
+        left: 25px;
+        z-index: 2;
+    }
+
+
+/* Product Page */
+
+    .img-responsive car1 {
+ 
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+
+    }
+
+    #picker 
+    {
+        width:25%;
+
+    }
+
+    /* Rental Cart*/
+
+.lead-title-RentalCartPage{
+    margin-left: 25%;
+
+}
+#ShoppingCartShell {
+    
+    background-color: yellow;
+}
+
+#SaveCartItem 
+{
+   margin-left:50px;
+}
